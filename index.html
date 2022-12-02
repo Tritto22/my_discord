@@ -5,14 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My_Discord</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style_default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></head>
 <body>
+    <header>
+        <nav class="top_nav flex p-5">
+            <div>
+                <a href="#">Discord</a>
+            </div>
+
+            <div class="button_screen">
+                <button><i class="fa-solid fa-minus mr-10"></i></button>
+                <button><i class="fa-regular fa-square-full mr-10"></i></button>
+                <button><i class="fa-solid fa-xmark mr-10"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex">
+        <nav class="icon_nav ">
+            <ul class="flex">
+                <li class="direct_message p-10">
+                    <button>
+                        <img id="logo_direct_message" src="img/discord-new-logo-2021-r225x225.jpg" alt="logo_discord">
+                    </button>
+                </li>
+
+                <hr>
+
+                <li class="server p-10">
+                    <button>I</button> 
+                </li>
+
+                <li class="new_server p-10">
+                    <button>
+                    <i class="fa-solid fa-plus"></i>
+                    </button>
+                </li>
+
+                <li class="public_server p-10">
+                    <button>
+                        <i class="fa-solid fa-compass"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container_center">
+            <nav class="top_nav ">
+                <ul class="flex">
+                    <li class="friends">
+                        <i class="fa-solid fa-user-group p-5"></i>
+                        <!-- <span>Amici</span> -->
+                    </li>
     
+                    <li>
+                        <div class="p-5">Online</div>
+                    </li>
+    
+                    <li>
+                        <div class="p-5">Tutti</div>
+                    </li>
+    
+                    <li>
+                        <div class="p-5">In attesa</div>
+                    </li>
+    
+                    <li>
+                        <div class="p-5">Bloccati</div>
+                    </li>
+    
+                    <li>
+                        <i class="fa-solid fa-inbox p-5"></i>
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- <nav class="left_nav">
+                <ul>
+                    <li>
+                        <input type="text" placeholder="Trova o avvia una conversazione">
+                    </li>
+    
+                </ul>
+            </nav> -->
+    
+            <div class="container mt-60">
+                <div class="img_background">
+                    <img src="img/Screenshot_20221202_123602.png" alt="">
+                </div>
+                
+                <div class="no_game mt-40">Nessune vuole giocare col Wumpus.</div>
+            </div>    
+        </div>
+
+    </main>
+
 </body>
 </html>
