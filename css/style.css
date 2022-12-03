@@ -114,6 +114,10 @@ main .top_nav .question {
     display: none;
 }
 
+main .top_nav .new_group_chat {
+    display: none;
+}
+
 main .left_nav {
     display: none;
     font-size: 20px;
@@ -151,7 +155,7 @@ main .container_center {
 .container_game {
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     background-position: center;
     justify-content: center;
@@ -199,8 +203,12 @@ main .no_game {
         display: inline;
     }
 
+    main .top_nav .new_group_chat {
+        display: inline;
+    }
+
     main .top_nav {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     main .left_nav {
