@@ -55,12 +55,72 @@
             </ul>
         </nav>
 
-        <div class="container_center">
+        <nav class="left_nav flex p-10">
+            <ul>
+                <li class="search_conversation mb-20">
+                    <input type="text" placeholder="Trova o avvia una conversazione">
+                </li>
+                
+                <li class="friends mb-20">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Amici</span>
+                </li>
+
+                <li class="nitro mb-20">
+                    <i class="fa-solid fa-meteor"></i>
+                    <span>Nitro</span>
+                </li>
+
+                <li class="mb-20">
+                    <span>Messaggi diretti</span>
+                    <i class="fa-solid fa-plus"></i>
+                </li>
+
+                <li class="mb-20">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Name</span>
+                </li>
+
+                <li class="mb-20">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Name</span>
+                </li>
+
+                <li class="mb-20">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Name</span>
+                </li>
+
+                <li class="mb-20">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Name</span>
+                </li>
+            </ul>
+
+            <div class="setting_user flex p-5">                
+                <div class="info_user flex">
+                    <div class="img_user mr-20"><i class="fa-regular fa-user"></i></div>
+                    <div class="name_user">
+                        <div>Name</div>
+                        <div>#0000</div>
+                    </div>
+                </div>
+
+                <div class="periferic_user">
+                    <i class="fa-solid fa-microphone mr-10"></i>
+                    <i class="fa-solid fa-headphones mr-10"></i>
+                    <i class="fa-solid fa-gear mr-10"></i>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container_center flex">
             <nav class="top_nav ">
                 <ul class="flex">
                     <li class="friends">
                         <i class="fa-solid fa-user-group p-5"></i>
-                        <!-- <span>Amici</span> -->
+                        <span class="mr-10">Amici</span>
                     </li>
     
                     <li>
@@ -78,32 +138,47 @@
                     <li>
                         <div class="p-5">Bloccati</div>
                     </li>
-    
+
+                    <li class="add_friends p-5">
+                        <button class="p-5">Aggiungi amico</button>
+                    </li>
+                    
                     <li>
+                        <i class="fa-solid fa-message p-5 mr-10"></i>
+                    </li>
+
+                    <li class="inbox">
                         <i class="fa-solid fa-inbox p-5"></i>
+                    </li>
+
+                    <li class="question">
+                        <i class="fa-regular fa-circle-question p-5"></i>
                     </li>
                 </ul>
             </nav>
     
-            <!-- <nav class="left_nav">
-                <ul>
-                    <li>
-                        <input type="text" placeholder="Trova o avvia una conversazione">
-                    </li>
-    
-                </ul>
-            </nav> -->
-    
-            <div class="container mt-60">
-                <div class="img_background">
-                    <img src="img/Screenshot_20221202_123602.png" alt="">
+            <div class="container_game flex">
+                    <div class="no_game mb-20">Nessune vuole giocare col Wumpus.</div>
+            </div>
+            
+            <div class="setting_user flex p-5">                
+                <div class="info_user flex">
+                    <div class="img_user mr-20"><i class="fa-regular fa-user"></i></div>
+                    <div class="name_user">
+                        <div>Name</div>
+                        <div>#0000</div>
+                    </div>
                 </div>
-                
-                <div class="no_game mt-40">Nessune vuole giocare col Wumpus.</div>
-            </div>    
+
+                <div class="periferic_user">
+                    <i class="fa-solid fa-microphone mr-10"></i>
+                    <i class="fa-solid fa-headphones mr-10"></i>
+                    <i class="fa-solid fa-gear mr-10"></i>
+                </div>
+            </div>
         </div>
 
     </main>
-
+    
 </body>
 </html>

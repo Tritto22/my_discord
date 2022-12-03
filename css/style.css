@@ -16,6 +16,10 @@ li {
     list-style-type: none;
 }
 
+header {
+    height: 30px;
+}
+
 header .top_nav {
     justify-content: space-between;
     background-color: #171718;
@@ -38,7 +42,7 @@ main {
 }
 
 main .icon_nav {
-    height: 100vh;
+    height: calc(100vh - 30px);
     width: 20%;
     background-color: #171718;
 }
@@ -86,26 +90,128 @@ main .top_nav ul {
     align-items: center;
 }
 
-/* main .left_nav input {
+main .top_nav .inbox {
+    border-left: 1px solid #6d6c74;
+}
+
+main .top_nav .friends span {
+    display: none;
+}
+
+main .top_nav .add_friends {
+    display: none;
+}
+
+main .top_nav .add_friends button {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+
+main .top_nav .question {
+    display: none;
+}
+
+main .left_nav {
+    display: none;
+    font-size: 20px;
+    background-color: #2f3136;
+}
+
+main .left_nav li {
+    text-align: center;
+}
+
+main .left_nav i.fa-user {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #aeadb4;
+    line-height: 140%;
+}
+
+main .left_nav input {
     background-color: #1a1a1b;
     border: none;
     border-radius: 5px;
 }
 
 main .left_nav input::placeholder {
-    color: #aaa9b2;
-} */
-
-main .container {
-    display: block;
+    color: #6d6c74;
 }
 
-main .img_background img {
-    height: 150px;
+main .container_center {
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    object-fit: cover;
 }
+
+.container_game {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
 
 main .no_game {
     text-align: center;
+}
+
+.container_center .setting_user {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292b2f;
+}
+
+.container_center .info_user {
+    align-items: center;
+}
+
+.info_user .name_user {
+    font-size: 12px;
+}
+
+.info_user i {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 580px) {
+
+    main .top_nav .friends span {
+        display: inline;
+    }
+    
+    main .icon_nav {
+        width: 10%;
+    }
+
+    main .top_nav .add_friends {
+        display: inline;
+    }
+
+    main .top_nav .question {
+        display: inline;
+    }
+
+    main .top_nav {
+        font-size: 20px;
+    }
+
+    main .left_nav {
+        display: inline;
+    }
+
+    main .left_nav .search_conversation, main .left_nav span {
+        display: none;
+    }
+
+    main .left_nav .setting_user {
+        display: none;
+    }
 }
