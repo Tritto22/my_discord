@@ -80,6 +80,7 @@ main .icon_nav button {
 main .top_nav {
     height: 50px;
     display: block;
+    border-bottom: 2px solid #1a1a1b;
 }
 
 main .top_nav .friends {
@@ -138,6 +139,8 @@ main .left_nav input {
     background-color: #1a1a1b;
     border: none;
     border-radius: 5px;
+    width: 100%;
+    height: 40px;
 }
 
 main .left_nav input::placeholder {
@@ -158,7 +161,7 @@ main .container_center {
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100%;
+    height: calc(100% - 70px);
     background-position: center;
     justify-content: center;
     align-items: flex-end;
@@ -236,7 +239,21 @@ main .no_game {
         justify-content: space-between;
     }
 
-    main .left_nav .search_conversation, main .left_nav span {
+    main .left_nav hr {
+        display: block;
+    }
+
+    main .container_center .top_nav {
+        height: 70px;
+    }
+
+    main .left_nav .search_conversation {
+        display: block;
+        border-bottom: 2px solid #1a1a1b;
+        height: 70px;
+    }
+
+    main .left_nav span {
         display: inline;
     }
 
